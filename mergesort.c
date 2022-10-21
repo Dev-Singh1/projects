@@ -72,7 +72,6 @@ int main(int argc, char* argv[]){
   int j;
   char sorted[50];
   int array[50];
-  printf("%d\n", 1);
   if(strlen(argv[1]) > 50){
     printf("Input too large!!\n");
     return 0;
@@ -87,6 +86,6 @@ int main(int argc, char* argv[]){
   for(j=0; j<strlen(word); j++){
     sorted[j] = unconvert(&array[j]);
   }
-  printf("Sorted word is: \n %s \n", sorted);
+  printf("Sorted word is:\n%s\n", sorted);
   return 0;
 }
